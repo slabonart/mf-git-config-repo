@@ -1,1 +1,20 @@
-
+spring:
+  application:
+    name: song-processor
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  kafka:
+    topic-name: resource
+    bootstrap-servers: kafka:29092
+    group-id: group_id
+    auto-offset-reset: earliest
+client:
+  song-service:
+    url: http://song-service:8080
+  song-resource-service:
+    url: http://song-resource-service:8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-service:8761/eureka
