@@ -1,9 +1,6 @@
 spring:
   application:
     name: song-storage-service
-  sql:
-    init:
-      mode: always
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://song-storage-service-db:3306/song_storage
