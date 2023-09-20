@@ -30,3 +30,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka-service:8761/eureka
+client:
+  song-storage-service:
+    url: http://song-storage-service:8080
