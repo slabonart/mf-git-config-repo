@@ -48,14 +48,6 @@ resilience4j.circuitbreaker:
       waitDurationInOpenState: 20s
       failureRateThreshold: 50
       eventConsumerBufferSize: 50
-resilience4j.retry:
-  configs:
-    default:
-      maxAttempts: 3
-      waitDuration: 1000
-  instances:
-    storageCircuitBreaker:
-      baseConfig: default
 management:
   security:
     enabled: false
