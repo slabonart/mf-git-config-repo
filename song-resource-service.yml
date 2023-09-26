@@ -33,3 +33,39 @@ eureka:
 client:
   song-storage-service:
     url: http://song-storage-service:8080
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      registerHealthIndicator: true
+  instances:
+    storageCircuitBreaker:
+      registerHealthIndicator: true
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 3
+      automaticTransitionFromOpenToHalfOpenEnabled: true
+      slidingWindowType: TIME_BASED
+      minimumNumberOfCalls: 3
+      waitDurationInOpenState: 20s
+      failureRateThreshold: 50
+      eventConsumerBufferSize: 50
+resilience4j.retry:
+  configs:
+    default:
+      maxAttempts: 3
+      waitDuration: 1000
+  instances:
+    storageCircuitBreaker:
+      baseConfig: default
+management:
+  security:
+    enabled: false
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+  endpoints:
+    web:
+      exposure:
+        include: "*"
