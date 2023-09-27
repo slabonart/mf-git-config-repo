@@ -35,4 +35,6 @@ management:
 server:
   port: 8092
 logging:
-  file.name: /logs/song-service.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file.name: logs/song-service.log
