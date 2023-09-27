@@ -35,4 +35,4 @@ management:
 server:
   port: 8092
 logging:
-	file.name: /logs/song-service.log
+  file.name: /logs/song-service.log
