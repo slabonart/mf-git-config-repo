@@ -29,3 +29,5 @@ management:
     export:
       prometheus:
         enabled: true
+logging:
+  file.name: logs/song-processor.log
