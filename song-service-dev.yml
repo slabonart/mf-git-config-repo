@@ -3,7 +3,7 @@ spring:
     name: song-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/song_database
+    url: jdbc:mysql://localhost:3308/song_database
     username: root
     password: pass123
   jpa:
