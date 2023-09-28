@@ -69,5 +69,3 @@ management:
     export:
 logging:
   file.name: logs/song-resource-service.log
-      prometheus:
-        enabled: true
