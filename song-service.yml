@@ -32,5 +32,5 @@ management:
     export:
       prometheus:
         enabled: true
-logging:
-  file.name: logs/song-service.log
+#logging:
+#  file.name: logs/song-service.log
