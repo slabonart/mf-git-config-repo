@@ -27,5 +27,5 @@ server:
 okta:
   oauth2:
     issuer: https://dev-46703780.okta.com/oauth2/default
-    client-id: 0oabns9yfhsSiyasb5d7
-    client-secret: _QCqZaGecPwzpqmPv0n-1sgjpZ-fovUM1xtqkLWhW97CWf8pCwJAlDSPPE21eA8d
+    client-id: 0oabntw7szyHF6ydt5d7
+    client-secret: X-dSx6ydDyi0n8IDUBd_W5Z27J6Ji9iUke8Qz37-ax483ZimijlC9E9XomT65MT8
