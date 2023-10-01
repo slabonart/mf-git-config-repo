@@ -25,7 +25,7 @@ server:
   port: 8094
 
 okta:
-  oath2:
+  oauth2:
     issuer: https://dev-46703780.okta.com/oauth2/default
     client-id: 0oabns9yfhsSiyasb5d7
     client-secret: _QCqZaGecPwzpqmPv0n-1sgjpZ-fovUM1xtqkLWhW97CWf8pCwJAlDSPPE21eA8d
