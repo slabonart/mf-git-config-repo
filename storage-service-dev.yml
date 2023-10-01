@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: storage-service
+  sql:
+    init:
+      mode: always
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3309/song_storage_database
+    username: root
+    password: pass123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8094
+
+okta:
+  oath2:
+    issuer: https://dev-46703780.okta.com/oauth2/default
+    client-id: 0oabns9yfhsSiyasb5d7
+    client-secret: _QCqZaGecPwzpqmPv0n-1sgjpZ-fovUM1xtqkLWhW97CWf8pCwJAlDSPPE21eA8d
