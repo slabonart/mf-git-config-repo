@@ -34,5 +34,3 @@ management:
         enabled: true
 server:
   port: 8092
-logging:
-  file.path: logs
